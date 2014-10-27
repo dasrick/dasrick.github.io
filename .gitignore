@@ -1,9 +1,0 @@
-# OS stuff
-.DS_Store
-
-# IDE stuff
-.idea
-atlassian-ide-plugin.xml
-
-# jekyll stuff
-.sass-cache
