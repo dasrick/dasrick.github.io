@@ -1,2 +1,3 @@
-.htaccess
-*.html.gz
+# ide stuff
+atlassian-ide-plugin.xml
+.idea
