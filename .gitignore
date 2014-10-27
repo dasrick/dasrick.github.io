@@ -3,5 +3,6 @@ atlassian-ide-plugin.xml
 .idea
 
 # jekyll source stuff
+.sass-cache
 _site
 _deploy
