@@ -1,0 +1,77 @@
+header {
+  font-size: $header-font-size;
+
+  .navbar-default {
+    @include getBackgroundColorRGBA($header-bg-r, $header-bg-g, $header-bg-b, $header-bg-opacity);
+    border-color: $header-border-color;
+
+    .navbar-nav {
+      > li {
+        @include getLinkColors($header-link-color, $header-link-hover-color, $header-link-active-color, $header-link-focus-color);
+        @include getLinkBgColors($header-link-bg, $header-link-hover-bg, $header-link-active-bg, $header-link-focus-bg);
+      }
+      > .active {
+        > a {
+          @include getColor($header-link-active-color);
+          @include getBackgroundColor($header-link-active-bg);
+          &:hover {
+            @include getColor($header-link-active-color);
+            @include getBackgroundColor($header-link-active-bg);
+          }
+          &:active {
+            @include getColor($header-link-active-color);
+            @include getBackgroundColor($header-link-active-bg);
+          }
+          &:focus {
+            @include getColor(inherit);
+            @include getBackgroundColor(inherit);
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      color: #dddddd;
+      padding: 12px 15px 0;
+      line-height: 24px;
+      &:hover,
+      &:focus {
+        color: #ffffff;
+      }
+
+      > span {
+        vertical-align: baseline;
+        line-height: 20px;
+
+        &.part-0 {
+          color: #c03;
+          font-size: 22px;
+          font-weight: 300;
+          margin-right: 4px;
+        }
+        &.part-1 {
+          color: #424242;
+          font-size: 29px;
+          font-weight: 300;
+
+          text-transform: lowercase;
+        }
+        &.part-2 {
+          color: #424242;
+          font-size: 22px;
+          font-weight: 700;
+
+          text-transform: uppercase;
+        }
+        &.part-3 {
+          display: none;
+          color: #999;
+          font-size: 18px;
+          font-weight: 300;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+

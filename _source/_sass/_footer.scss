@@ -1,0 +1,25 @@
+footer {
+  background-color: $footer-bg;
+  padding: 30px 0 20px;
+  border-color: $footer-border-color;
+  color: $footer-color;
+  text-shadow: 0 -1px 0 $footer-text-shadow-color;
+
+  @include getLinkColors($footer-link-color, $footer-link-hover-color, $footer-link-active-color, $footer-link-focus-color);
+
+  h1, h2, h3, h4 {
+    color: $footer-heading-color;
+    text-shadow: 0 -1px 0 $footer-heading-text-shadow-color;
+    font-weight: 300;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  hr {
+    border-top: 1px solid darken($footer-bg, 5);
+    border-bottom: 1px solid lighten($footer-bg, 5);
+  }
+}
