@@ -1,8 +1,9 @@
 footer {
+  color: $footer-color;
   background-color: $footer-bg;
   padding: 30px 0 20px;
+  margin-top: 30px;
   border-color: $footer-border-color;
-  color: $footer-color;
   text-shadow: 0 -1px 0 $footer-text-shadow-color;
 
   @include getLinkColors($footer-link-color, $footer-link-hover-color, $footer-link-active-color, $footer-link-focus-color);
