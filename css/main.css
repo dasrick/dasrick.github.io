@@ -30,6 +30,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.fa {
+  min-width: 1em; }
+
 header {
   font-size: 18px; }
   header .navbar-default {
@@ -97,10 +100,11 @@ header {
           margin-left: 4px; }
 
 footer {
+  color: #acacac;
   background-color: #323232;
   padding: 30px 0 20px;
+  margin-top: 30px;
   border-color: transparent;
-  color: #acacac;
   text-shadow: 0 -1px 0 #010101; }
   footer a {
     color: #898989; }
