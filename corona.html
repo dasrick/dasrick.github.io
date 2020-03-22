@@ -9,34 +9,51 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <title>COVID-19 charts</title>
+  <title>COVID-19 | charts</title>
+  <style>
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+      text-transform: capitalize;
+      margin-top: 1.5rem;
+    }
+
+    .tox-chart {
+      border: 1px solid #e2e2e2;
+      padding: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tox-chart > a {
+      color: #605b5b;
+      font-size: 0.7rem;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
   <ul>
     <li>
-      <a href="#world">world</a>
+      <a href="#world">World</a>
       <ul>
-        <li><a href="#europe">europe</a>
+        <li><a href="#europe">Europe</a>
           <ul>
-            <li><a href="#germany">germany</a></li>
-            <li><a href="#italy">italy</a></li>
-            <li><a href="#spain">spain</a></li>
+            <li><a href="#germany">Germany</a></li>
+            <li><a href="#italy">Italy</a></li>
+            <li><a href="#spain">Spain</a></li>
           </ul>
         </li>
-        <li><a href="#asia">asia</a>
+        <li><a href="#asia">Asia</a>
           <ul>
-            <li><a href="#china">china</a></li>
+            <li><a href="#china">China</a></li>
           </ul>
         </li>
+        <!--
         <li><a href="#north_america">north america</a>
-          <!--
           <ul>
             <li><a href="#germany">germany</a></li>
           </ul>
-          -->
         </li>
+        -->
       </ul>
     </li>
   </ul>
@@ -44,7 +61,7 @@
   <h1>world</h1>
   <a id="europe"></a>
   <h2>europe</h2>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Überblick Europa&amp;nbsp;&amp;nbsp;"
             aria-label="Europa Choropleth Karte" id="datawrapper-chart-NukrU" src="//datawrapper.dwcdn.net/NukrU/9/"
             scrolling="no" frameborder="0"
@@ -63,7 +80,7 @@
   </div>
   <a id="germany"></a>
   <h3>germany</h3>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Überblick Deutschland&amp;nbsp;&amp;nbsp;"
             aria-label="Tabelle" id="datawrapper-chart-y49Gp" src="//datawrapper.dwcdn.net/y49Gp/1/" scrolling="no"
             frameborder="0" style="width: 0px; border: none; min-width: 100% !important; height: 729px;"
@@ -80,7 +97,24 @@
     }() /*]]>*/</script>
     <a href="https://www.n-tv.de/ntvintern/Datenschutzerklaerung-article15745191.html" class="data-protection-link">*Datenschutz</a>
   </div>
-  <div>
+  <div class="tox-chart">
+    <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Fälle in Deutschland&amp;nbsp;&amp;nbsp;"
+            aria-label="Säulen" id="datawrapper-chart-9y34y" src="//datawrapper.dwcdn.net/9y34y/9/" scrolling="no"
+            frameborder="0" style="width: 0px; border: none; min-width: 100% !important; height: 406px;"
+            height="400"></iframe>
+    <script type="text/javascript">/*<![CDATA[*/
+    !function () {
+      'use strict'
+      window.addEventListener('message', function (a) {
+        if (void 0 !== a.data['datawrapper-height']) for (var e in a.data['datawrapper-height']) {
+          var t = document.getElementById('datawrapper-chart-' + e) || document.querySelector('iframe[src*=\'' + e + '\']')
+          t && (t.style.height = a.data['datawrapper-height'][e] + 'px')
+        }
+      })
+    }() /*]]>*/</script>
+    <a href="https://www.n-tv.de/ntvintern/Datenschutzerklaerung-article15745191.html" class="data-protection-link">*Datenschutz</a>
+  </div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Deutschland im Vergleich&amp;nbsp;&amp;nbsp;"
             aria-label="Interactive line chart" id="datawrapper-chart-ZJuRl" src="//datawrapper.dwcdn.net/ZJuRl/4/"
             scrolling="no" frameborder="0" style="width: 0px; border: none; min-width: 100% !important; height: 395px;"
@@ -99,7 +133,7 @@
   </div>
   <a id="italy"></a>
   <h3>italy</h3>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Überblick Italien&amp;nbsp;&amp;nbsp;" aria-label="Tabelle"
             id="datawrapper-chart-cgmC8" src="//datawrapper.dwcdn.net/cgmC8/2/" scrolling="no" frameborder="0"
             style="width: 0px; border: none; min-width: 100% !important; height: 671px;" height="690"></iframe>
@@ -117,7 +151,7 @@
   </div>
   <a id="spain"></a>
   <h3>spain</h3>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Wachstumsrate in Spanien&amp;nbsp;&amp;nbsp;"
             aria-label="Interactive line chart" id="datawrapper-chart-meDxC" src="//datawrapper.dwcdn.net/meDxC/1/"
             scrolling="no" frameborder="0"
@@ -134,10 +168,27 @@
     }() /*]]>*/</script>
     <a href="https://www.n-tv.de/ntvintern/Datenschutzerklaerung-article15745191.html" class="data-protection-link">*Datenschutz</a>
   </div>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Fälle in Spanien&amp;nbsp;&amp;nbsp;" aria-label="Säulen"
             id="datawrapper-chart-q23Ha" src="//datawrapper.dwcdn.net/q23Ha/1/" scrolling="no" frameborder="0"
             style="width: 0px; border: none; min-width: 100% !important; height: 386px;" height="400"></iframe>
+    <script type="text/javascript">/*<![CDATA[*/
+    !function () {
+      'use strict'
+      window.addEventListener('message', function (a) {
+        if (void 0 !== a.data['datawrapper-height']) for (var e in a.data['datawrapper-height']) {
+          var t = document.getElementById('datawrapper-chart-' + e) || document.querySelector('iframe[src*=\'' + e + '\']')
+          t && (t.style.height = a.data['datawrapper-height'][e] + 'px')
+        }
+      })
+    }() /*]]>*/</script>
+    <a href="https://www.n-tv.de/ntvintern/Datenschutzerklaerung-article15745191.html" class="data-protection-link">*Datenschutz</a>
+  </div>
+  <div class="tox-chart">
+    <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Entwicklung in Spanien&amp;nbsp;&amp;nbsp;"
+            aria-label="Interactive line chart" id="datawrapper-chart-BpXml" src="//datawrapper.dwcdn.net/BpXml/1/"
+            scrolling="no" frameborder="0" style="width: 0px; border: none; min-width: 100% !important; height: 397px;"
+            height="400"></iframe>
     <script type="text/javascript">/*<![CDATA[*/
     !function () {
       'use strict'
@@ -154,7 +205,7 @@
   <h2>asia</h2>
   <a id="china"></a>
   <h3>china</h3>
-  <div>
+  <div class="tox-chart">
     <iframe title="&amp;nbsp;Coronavirus&amp;nbsp;&amp;nbsp;Fälle in China&amp;nbsp;&amp;nbsp;" aria-label="Säulen"
             id="datawrapper-chart-OkuQO" src="//datawrapper.dwcdn.net/OkuQO/29/" scrolling="no" frameborder="0"
             style="width: 0px; border: none; min-width: 100% !important; height: 388px;" height="400"></iframe>
@@ -170,8 +221,10 @@
     }() /*]]>*/</script>
     <a href="https://www.n-tv.de/ntvintern/Datenschutzerklaerung-article15745191.html" class="data-protection-link">*Datenschutz</a>
   </div>
+  <!--
   <a id="north_america"></a>
   <h2>north america</h2>
+  -->
 </div>
 
 <!-- Optional JavaScript -->
